@@ -20,14 +20,14 @@ services:
     ports:
       - 7009:7009
     volumes:
-      - ./localdev/data:/data
+      - ./localdev/db/data:/data
 
   chatterbots-frontend:
     image: chatterbots-frontend:latest
     container_name: chatterbots-frontend
     restart: unless-stopped
     volumes:
-      - ./localdev/avatars:/usr/share/nginx/html/avatars
+      - ./localdev/avatars/data:/usr/share/nginx/html/avatars
     networks:
       - chatterbotsnet
     ports:

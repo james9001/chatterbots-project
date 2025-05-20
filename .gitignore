@@ -1,4 +1,6 @@
-.terraform
-.terraform.lock.hcl
 .DS_Store
 Thumbs.db
+.DS_Store
+Thumbs.db
+/localdev/db/*
+!/localdev/db/.gitkeep
